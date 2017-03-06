@@ -1,0 +1,34 @@
+{
+  "name": "smart-ll",
+  "version": "0.0.1",
+  "description": "This is a useful utility to provide ",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aloksguha/myip.git"
+  },
+  "maintainers": [
+    {
+      "name": "aloksguha",
+      "email": "aloksguha@gmail.com"
+    }
+  ],
+  "keywords": [
+    "nodejs",
+    "npm",
+    "data structure",
+    "linked-list",
+    "reverse",
+    "stack",
+    "queue"
+  ],
+  "author": "Alok Guha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aloksguha/smartll/issues"
+  },
+  "homepage": "https://github.com/aloksguha/smartll#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
