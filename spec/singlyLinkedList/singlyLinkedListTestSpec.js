@@ -13,7 +13,7 @@ describe("A Singly linkedlist test suite", function() {
     expect(linkedList).toBeDefined();
     expect(linkedList.printList).toBeDefined();
     expect(linkedList.reverseList).toBeDefined();
-    expect(linkedList.push).toBeDefined();
+    expect(linkedList.insert).toBeDefined();
     expect(linkedList.getSize).toBeDefined();
     expect(linkedList.getFirstNode).toBeDefined();
     expect(linkedList.getLastNode).toBeDefined();
@@ -32,7 +32,7 @@ describe("A Singly linkedlist test suite", function() {
   });
 
   it("should push value to list", function() {
-    linkedList.push('firstNode');
+    linkedList.insert('firstNode');
     expect(linkedList.getSize()).toBe(1);
     expect(linkedList.getFirstNode()).toBeDefined();
     expect(linkedList.getLastNode()).toBeDefined();
@@ -41,7 +41,7 @@ describe("A Singly linkedlist test suite", function() {
   });
 
   it("should push second node to list", function() {
-    linkedList.push('secondNode');
+    linkedList.insert('secondNode');
     expect(linkedList.getSize()).toBe(2);
     expect(linkedList.getFirstNode()).toBeDefined();
     expect(linkedList.getLastNode()).toBeDefined();
@@ -50,7 +50,7 @@ describe("A Singly linkedlist test suite", function() {
   });
 
   it("should push third node to list", function() {
-    linkedList.push('thirdNode');
+    linkedList.insert('thirdNode');
     expect(linkedList.getSize()).toBe(3);
     expect(linkedList.getFirstNode()).toBeDefined();
     expect(linkedList.getLastNode()).toBeDefined();
@@ -73,18 +73,17 @@ describe("A Singly linkedlist test suite", function() {
 
   it("should reverse list", function() {
     var tempLinkedList = new ll.singlyLinkedList();
-    tempLinkedList.push(1);
-    tempLinkedList.push(2);
-    tempLinkedList.push(3);
-    tempLinkedList.push(4);
+    tempLinkedList.insert(1);
+    tempLinkedList.insert('2');
+    tempLinkedList.insert('three');
+    tempLinkedList.insert({'value':'four'});
     tempLinkedList.reverseList();
-
     expect(tempLinkedList.getSize()).toBe(4);
-    expect(tempLinkedList.getFirstNode().value).toBe(4);
+    expect(JSON.stringify(tempLinkedList.getFirstNode().value)).toBe(JSON.stringify({'value':'four'}));
     expect(tempLinkedList.getLastNode().value).toBe(1);
-    expect(tempLinkedList.getNodeAtIndex(1).value).toBe(3);
-    expect(tempLinkedList.getNodeAtIndex(2).value).toBe(2);
-  })
+    expect(tempLinkedList.getNodeAtIndex(1).value).toBe('three');
+    expect(tempLinkedList.getNodeAtIndex(2).value).toBe('2');
+  });
 
 
 });

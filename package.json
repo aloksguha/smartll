@@ -1,11 +1,11 @@
 {
   "name": "smart-ll",
   "version": "0.0.1",
-  "description": "This is a useful utility to provide ",
+  "description": "Its a simple implementation of Linked-List ",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aloksguha/myip.git"
+    "url": "git+https://github.com/aloksguha/smartll"
   },
   "maintainers": [
     {
@@ -14,11 +14,14 @@
     }
   ],
   "keywords": [
+    "linked",
+    "list",
     "nodejs",
     "npm",
     "data structure",
     "linked-list",
     "reverse",
+    "reverse the linkedlist",
     "stack",
     "queue"
   ],
