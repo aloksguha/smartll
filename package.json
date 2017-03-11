@@ -1,6 +1,6 @@
 {
   "name": "smart-ll",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Its a simple implementation of Linked-List ",
   "main": "index.js",
   "repository": {

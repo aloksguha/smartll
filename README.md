@@ -102,6 +102,7 @@ linkedList.insert({'value':'four'});
 
 //it will completely reverse above list.
 linkedList.reverseList();
+```
 
 #### printList
 This function will print all nodes's values of the list over console.
